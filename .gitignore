@@ -1,0 +1,13 @@
+# Windows system files
+Thumbs.db
+Desktop.ini
+
+# VS Code local files
+.vscode/
+
+# Temporary files
+*.log
+*.tmp
+
+# Operating system files
+.DS_Store

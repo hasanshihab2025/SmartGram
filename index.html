@@ -1,30 +1,288 @@
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+          content="SmartGram - Smart Village Digital Service Platform">
 
-    <title>SmartGram</title>
+    <title>SmartGram | Smart Village Bangladesh</title>
 
-    <!-- Connect CSS -->
-    <link rel="stylesheet"
-          href="css/style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-    <h1>Welcome to SmartGram Development!</h1>
+    <!-- Application Header -->
+    <header id="app-header">
+        <div class="container">
 
-    <p>Smart Village Service Platform</p>
+            <a href="#" class="logo">
+                <span class="logo-icon">🌿</span>
+                <span>SmartGram</span>
+            </a>
 
-    <button id="testButton">
-        Test JavaScript
-    </button>
+            <nav id="main-navigation">
+                <a href="#home">Home</a>
+                <a href="#services">Services</a>
+                <a href="#village-map">Village Map</a>
+                <a href="#about">About</a>
+            </nav>
 
-    <!-- Connect JavaScript -->
+            <div class="header-actions">
+                <button id="role-toggle" type="button">
+                    Admin Panel
+                </button>
+            </div>
+
+        </div>
+    </header>
+
+
+    <!-- Main Application -->
+    <main id="app">
+
+        <!-- Home / Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="container">
+
+                <p class="eyebrow">SMART VILLAGE BANGLADESH</p>
+
+                <h1>
+                    Building a Smarter,
+                    <span>Connected Village.</span>
+                </h1>
+
+                <p class="hero-description">
+                    A digital platform connecting citizens,
+                    village services and local administration.
+                </p>
+
+                <button id="report-issue-btn" type="button">
+                    Report an Issue
+                </button>
+
+            </div>
+        </section>
+
+
+        <!-- Citizen Dashboard -->
+        <section id="citizen-dashboard" class="dashboard-section">
+            <div class="container">
+
+                <div class="section-heading">
+                    <p class="eyebrow">CITIZEN PORTAL</p>
+                    <h2>Village Dashboard</h2>
+                    <p>Explore services and stay connected with your village.</p>
+                </div>
+
+                <div id="dashboard-stats">
+                    <!-- Statistics will be added later -->
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- Village Services -->
+        <section id="services" class="services-section">
+            <div class="container">
+
+                <div class="section-heading">
+                    <p class="eyebrow">OUR SERVICES</p>
+                    <h2>Village Services</h2>
+                </div>
+
+                <div id="services-container">
+                    <!-- Service cards will be added later -->
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- Village Map -->
+        <section id="village-map" class="map-section">
+            <div class="container">
+
+                <div class="section-heading">
+                    <p class="eyebrow">EXPLORE YOUR VILLAGE</p>
+                    <h2>Village Map</h2>
+                </div>
+
+                
+<div id="village-map-container">
+
+    <div class="village-map-header">
+        <div>
+            <h3>Kakara Village</h3>
+            <p>Chakaria, Cox's Bazar, Bangladesh</p>
+        </div>
+
+        <span class="map-label">Illustrative Map</span>
+    </div>
+
+    <div id="village-map-visual">
+
+        <div class="map-road road-horizontal"></div>
+        <div class="map-road road-vertical"></div>
+
+        <div class="map-marker marker-health"
+     data-location="health">
+
+    <span>🏥</span>
+    <small>Healthcare</small>
+
+</div>
+
+        <div class="map-marker marker-school"
+     data-location="school">
+
+    <span>🎓</span>
+    <small>School</small>
+
+</div>
+
+        <div class="map-marker marker-water"
+     data-location="water">
+
+    <span>💧</span>
+    <small>Water Supply</small>
+
+</div>
+
+        <div class="map-marker marker-community"
+     data-location="community">
+
+    <span>🏛️</span>
+    <small>Community Center</small>
+
+</div>
+
+    </div>
+
+    <div id="map-location-details" hidden></div>
+
+    <p class="map-disclaimer">
+        Note: This is an illustrative village map,
+        not a geographically accurate map.
+    </p>
+
+</div>
+
+
+            </div>
+        </section>
+
+
+        <!-- Issue Reporting -->
+        <section id="issue-reporting" class="report-section">
+            <div class="container">
+
+                <div class="section-heading">
+                    <p class="eyebrow">COMMUNITY PARTICIPATION</p>
+                    <h2>Report a Village Issue</h2>
+                </div>
+
+                <div id="issue-form-container">
+                    <!-- Issue reporting form will be added later -->
+                </div>
+
+            </div>
+        </section>
+
+<!-- Citizen Report History -->
+<section id="report-history" class="history-section">
+
+    <div class="container">
+
+        <div class="section-heading">
+            <p class="eyebrow">YOUR SUBMISSIONS</p>
+            <h2>My Report History</h2>
+            <p>Track the progress of your submitted village issues.</p>
+        </div>
+
+        <div id="report-history-container">
+            <!-- Report history will be rendered here -->
+        </div>
+
+    </div>
+
+</section>
+
+
+
+        <!-- Admin Dashboard -->
+        <section id="admin-dashboard" class="admin-section" hidden>
+            <div class="container">
+
+                <div class="section-heading">
+                    <p class="eyebrow">ADMINISTRATION</p>
+                    <h2>Admin Dashboard</h2>
+                </div>
+
+                <div id="admin-content">
+                    <!-- Admin management interface will be added later -->
+                </div>
+                    <!-- Admin Category Analytics -->
+<section id="admin-analytics">
+
+    <div class="section-heading">
+        <p class="eyebrow">VILLAGE INSIGHTS</p>
+        <h2>Category-wise Issue Analysis</h2>
+        <p>Understand the distribution of reported village issues.</p>
+    </div>
+
+    <div id="category-analytics-container">
+        <!-- Category analytics will appear here -->
+    </div>
+        <div class="section-heading">
+    <p class="eyebrow">STATUS OVERVIEW</p>
+    <h2>Status-wise Issue Analysis</h2>
+    <p>Monitor the current progress of reported village issues.</p>
+</div>
+
+<div id="status-analytics-container">
+    <!-- Status-wise analytics will appear here -->
+</div>
+
+</section>
+
+            </div>
+        </section>
+
+    </main>
+
+<!-- About Section -->
+<section id="about" class="about-section">
+    <div class="container">
+        <div class="section-heading">
+            <p class="eyebrow">ABOUT SMARTGRAM</p>
+            <h2>Building a Smarter Village</h2>
+            <p>
+                SmartGram is a digital village platform designed
+                to improve community services, public communication,
+                and local issue management in Kakara Village,
+                Chakaria, Cox's Bazar, Bangladesh.
+            </p>
+        </div>
+    </div>
+</section>
+
+    <!-- Footer -->
+    <footer id="app-footer">
+        <div class="container">
+            <p>
+                © 2026 SmartGram.
+                Smart Village Bangladesh.
+            </p>
+        </div>
+    </footer>
+
+
+    <!-- JavaScript -->
     <script src="js/app.js"></script>
 
 </body>
